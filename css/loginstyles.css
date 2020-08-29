@@ -1,0 +1,77 @@
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  background-image: url(../assets/wall-color.jpg);
+}
+.login-wrapper:hover {
+  cursor: pointer;
+}
+.login-box {
+  display: flex;
+  flex-flow: column;
+  height: 40%;
+  width: 275px;
+
+  border-radius: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  height: 64%;
+  align-items: center;
+}
+.login-img {
+  display: flex;
+  height: 60%;
+  align-items: center;
+  width: 35%;
+  border-radius: 59%;
+}
+#input-text {
+  height: 45px;
+  width: 93%;
+  border: none;
+  text-align: center;
+  font-size: 22px;
+  outline: none;
+  border-radius: 15px;
+  background: #e2dddd;
+}
+.userName {
+  height: 40px;
+  width: 93%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.user-name-div {
+  height: 75%;
+  border-radius: 20px;
+  background: #f0f0f0;
+}
+
+.enter-name {
+  display: flex;
+  height: 36%;
+  flex-flow: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.log-into {
+  display: flex;
+  justify-content: center;
+  height: 12%;
+  color: white;
+  align-items: center;
+  background: rgba(29, 161, 242, 1);
+  border-radius: 20px;
+  /* border-bottom-right-radius: 20px; */
+  margin-top: 10px;
+}

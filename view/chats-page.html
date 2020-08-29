@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+    <title>suma</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="../script/script.js" defer></script>
+  </head>
+  <body>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBuaYZ4hccdv-3Nrnqzoyi_tBgmoyaDWjk",
+        authDomain: "chatsapp-b4ace.firebaseapp.com",
+        databaseURL: "https://chatsapp-b4ace.firebaseio.com",
+        projectId: "chatsapp-b4ace",
+        storageBucket: "chatsapp-b4ace.appspot.com",
+        messagingSenderId: "237375429610",
+        appId: "1:237375429610:web:3dd47c48d2b431a1407093",
+        measurementId: "G-D4J7K1TW71",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    <div class="wrapper">
+      <div class="names">
+        <div class="name-header">Chats</div>
+        <div id="names-list" class="user">
+          <div class="search-input">
+            <div class="join-room">
+              <i class="material-icons" id="name-click">search</i>
+              <input id="input-text" placeholder="search" type="text" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="comments">
+        <div id="comment-id" class="comments-header">Chat Box</div>
+        <div id="parent-id" class="comment-section">
+          <div id="comment_list"></div>
+        </div>
+        <div class="detail-container">
+          <div class="input-container">
+            <textarea
+              id="comment-text-area"
+              type="text"
+              class="textarea"
+              placeholder="type a message..."
+            ></textarea>
+          </div>
+          <div class="button-container">
+            <img
+              src="../assets/sendicon.png"
+              class="img"
+              class="button"
+              id="comment-button"
+            />
+          </div>
+          <div>
+            <button type="submit" id="sample-button"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

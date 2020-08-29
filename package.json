@@ -1,0 +1,25 @@
+{
+  "name": "chatsapp",
+  "version": "1.0.0",
+  "description": "chat application",
+  "main": "index.js",
+  "scripts": {
+    "serve": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suryaSvP/chatsapp.git"
+  },
+  "author": "surya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suryaSvP/chatsapp/issues"
+  },
+  "homepage": "https://github.com/suryaSvP/chatsapp#readme",
+  "dependencies": {
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
